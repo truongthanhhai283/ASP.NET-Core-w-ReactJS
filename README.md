@@ -72,3 +72,4 @@ ASP.NET Core w ReactJS
 
         - Creating the database
 
+        - Seeding data to the Database
