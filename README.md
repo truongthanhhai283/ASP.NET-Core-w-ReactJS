@@ -77,3 +77,6 @@ ASP.NET Core w ReactJS
         - Seeding data to the Database
 
         - Adding an API controller
+
+### 2. Walking Skeleton Part 2 - Client
+        - create react app: npx create-react-app client-app --use-npm --template typescript
