@@ -1,13 +1,16 @@
 # ASP.NET-Core-w-ReactJS
+
 ASP.NET Core w ReactJS
 
-
 ### 1. Install extensions
+
     - c# / C# extension
     - Nuget Gallery
     - SQLite
+       setting -> enter key: private (c#) -> private member prefix: _
 
-### 2. Command 
+### 2. Command
+
     - dotnet --info
     - dotnet -h
     - dotnet new -l
@@ -22,11 +25,17 @@ ASP.NET Core w ReactJS
     show command: ctrl + shift + p
     - Generate assets for Build and debug
 
+### 3. Install nuget
+
+    - Microsoft.EntityFrameworkCore.Sqlite
+
 ### Content
+
 ### 1. Walking Skeleton Part 1 - API
+
         - Introduction:
             + Applcation Architecture
-                Persistencs        
+                Persistencs
 
             + Application project
                 API: Receice HTTP request and response to them
@@ -45,3 +54,6 @@ ASP.NET Core w ReactJS
             ex: http://localhost:5000/WeatherForecast
 
         - Creating a domain entity
+
+        - Adding an Entity Framework Db Context
+
