@@ -35,11 +35,13 @@ ASP.NET Core w ReactJS
 
     - Microsoft.EntityFrameworkCore.Sqlite
     - Microsoft.EntityFrameworkCore.Design
-    - dotnet tool install/update --global dotnet-ef    --version 5.0.5
+    - Microsoft.AspNetCore.Mvc.Core
+    - dotnet tool install/update --global 
+    - dotnet-ef  --version 5.0.5
     - dotnet tool install --global 
     - dotnet-aspnet-codegenerator --version 5.0.2
     - dotnet tool install --global Cake.Tool --version 1.1.0
-
+    
 ### Content
 
 ### 1. Walking Skeleton Part 1 - API
@@ -73,3 +75,5 @@ ASP.NET Core w ReactJS
         - Creating the database
 
         - Seeding data to the Database
+
+        - Adding an API controller
