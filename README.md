@@ -21,6 +21,10 @@ ASP.NET Core w ReactJS
     - dotnet sln list
     - dotnet add reference ProjectName
     - dotnet run/watch run
+    - dotnet tool -list --global
+    
+    - dotnet ef -h
+    - dotnet ef migrations add "text" -p Presistence -s ProjectNameAPI
 
     show command: ctrl + shift + p
     - Generate assets for Build and debug
@@ -28,6 +32,11 @@ ASP.NET Core w ReactJS
 ### 3. Install nuget
 
     - Microsoft.EntityFrameworkCore.Sqlite
+    - Microsoft.EntityFrameworkCore.Design
+    - dotnet tool install/update --global dotnet-ef    --version 5.0.5
+    - dotnet tool install --global 
+    - dotnet-aspnet-codegenerator --version 5.0.2
+    - dotnet tool install --global Cake.Tool --version 1.1.0
 
 ### Content
 
@@ -56,4 +65,6 @@ ASP.NET Core w ReactJS
         - Creating a domain entity
 
         - Adding an Entity Framework Db Context
+
+        - Creating an Entity Framework code first migration
 
