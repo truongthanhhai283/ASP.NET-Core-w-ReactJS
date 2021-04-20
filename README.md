@@ -8,6 +8,7 @@ ASP.NET Core w ReactJS
     - Nuget Gallery
     - SQLite
        setting -> enter key: private (c#) -> private member prefix: _
+    - SQLite
 
 ### 2. Command
 
@@ -25,6 +26,7 @@ ASP.NET Core w ReactJS
     
     - dotnet ef -h
     - dotnet ef migrations add "text" -p Presistence -s ProjectNameAPI
+    - dotnet ef database -h
 
     show command: ctrl + shift + p
     - Generate assets for Build and debug
@@ -67,4 +69,6 @@ ASP.NET Core w ReactJS
         - Adding an Entity Framework Db Context
 
         - Creating an Entity Framework code first migration
+
+        - Creating the database
 
