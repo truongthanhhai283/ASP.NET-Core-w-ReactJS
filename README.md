@@ -17,6 +17,10 @@ ASP.NET Core w ReactJS
     - dotnet sln add ProjectName/ProjectName.csproj
     - dotnet sln list
     - dotnet add reference ProjectName
+    - dotnet run/watch run
+
+    show command: ctrl + shift + p
+    - Generate assets for Build and debug
 
 ### Content
 ### 1. Walking Skeleton Part 1 - API
@@ -34,4 +38,7 @@ ASP.NET Core w ReactJS
                 Persistence: I provide the connection to the DB and translate the code into SQL queries
 
         - Creating the .Net projects and references
+
+        - Reviewing the project files and startup
+
             
