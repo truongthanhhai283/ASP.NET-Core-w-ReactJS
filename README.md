@@ -41,4 +41,5 @@ ASP.NET Core w ReactJS
 
         - Reviewing the project files and startup
 
-            
+        - The API controller and using postman
+            ex: http://localhost:5000/WeatherForecast
