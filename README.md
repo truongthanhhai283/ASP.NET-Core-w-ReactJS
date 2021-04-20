@@ -43,3 +43,5 @@ ASP.NET Core w ReactJS
 
         - The API controller and using postman
             ex: http://localhost:5000/WeatherForecast
+
+        - Creating a domain entity
