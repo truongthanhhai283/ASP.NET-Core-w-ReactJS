@@ -2,7 +2,7 @@
 
 // data = "42";
 
-interface IDuck {
+export interface IDuck {
   name: string;
   numLegs: number;
   makeSound: (sound: string) => void;
