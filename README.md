@@ -41,7 +41,10 @@ ASP.NET Core w ReactJS
     - dotnet tool install --global 
     - dotnet-aspnet-codegenerator --version 5.0.2
     - dotnet tool install --global Cake.Tool --version 1.1.0
-    
+
+### 4. Install npm
+    - npm install axios
+    - npm install semantic-ui-react semantic-ui-css
 ### Content
 
 ### 1. Walking Skeleton Part 1 - API
@@ -80,5 +83,3 @@ ASP.NET Core w ReactJS
 
 ### 2. Walking Skeleton Part 2 - Client
         - create react app: npx create-react-app client-app --use-npm --template typescript
-
-        - Install axios: npm install axios
