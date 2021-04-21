@@ -100,3 +100,7 @@ ASP.NET Core w ReactJS
         - Adding an Edit handler
 
         - Adding AutoMapper
+
+        - Adding a Delete handler
+
+        - Cancellation tokens
