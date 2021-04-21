@@ -104,3 +104,5 @@ ASP.NET Core w ReactJS
         - Adding a Delete handler
 
         - Cancellation tokens
+
+        - Using the debugger in VS Code
