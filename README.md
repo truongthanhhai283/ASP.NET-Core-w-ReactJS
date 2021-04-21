@@ -90,4 +90,13 @@ ASP.NET Core w ReactJS
         - CQRS
         
         - Creating our first Query handler
-            
+        
+        - Thin controllers in the API
+
+        - Adding a Details handler
+
+        - Adding a Create handler
+
+        - Adding an Edit handler
+
+        - Adding AutoMapper
