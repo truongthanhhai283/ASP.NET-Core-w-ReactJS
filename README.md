@@ -83,3 +83,11 @@ ASP.NET Core w ReactJS
 
 ### 2. Walking Skeleton Part 2 - Client
         - create react app: npx create-react-app client-app --use-npm --template typescript
+
+### 3. Creating a CRUD application using the CQRS + Mediator pattern
+        - Clean Architecture
+
+        - CQRS
+        
+        - Creating our first Query handler
+            
