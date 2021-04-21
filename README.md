@@ -80,3 +80,5 @@ ASP.NET Core w ReactJS
 
 ### 2. Walking Skeleton Part 2 - Client
         - create react app: npx create-react-app client-app --use-npm --template typescript
+
+        - Install axios: npm install axios
