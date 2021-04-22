@@ -19,7 +19,7 @@ function ActivityList({ activities, selectActivity }: Props) {
                 <Item.Meta as="a">{activity.date}</Item.Meta>
                 <Item.Description as="a">
                   {activity.description}
-                  {activity.city},{activity.venus}
+                  {activity.city},{activity.venue}
                 </Item.Description>
 
                 <Item.Extra>

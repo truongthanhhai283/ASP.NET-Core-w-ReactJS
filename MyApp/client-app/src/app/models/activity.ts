@@ -5,5 +5,5 @@ export interface IActivity {
   description: string;
   category: string;
   city: string;
-  venus: string;
+  venue: string;
 }

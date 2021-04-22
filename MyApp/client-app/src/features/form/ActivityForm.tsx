@@ -15,7 +15,7 @@ function ActivityForm({ activity: selectedActivity, closeForm }: Props) {
     description: "",
     date: "",
     city: "",
-    venus: "",
+    venue: "",
   };
 
   const [activity, setActivity] = useState(initialState);
@@ -66,9 +66,9 @@ function ActivityForm({ activity: selectedActivity, closeForm }: Props) {
             onChange={handleInputChange}
           />
           <Form.Input
-            placeholder="Venus"
-            value={activity.venus}
-            name="venus"
+            placeholder="Venue"
+            value={activity.venue}
+            name="venue"
             onChange={handleInputChange}
           />
           <Button
