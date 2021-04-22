@@ -4,6 +4,7 @@ import { Container, List } from "semantic-ui-react";
 import { IActivity } from "../models/activity";
 import Navbar from "../layout/Navbar";
 import ActivityDashboard from "../../features/activities/dashboard/ActivityDashboard";
+import { v4 as uuid } from "uuid";
 
 function App() {
   const [activities, setActivities] = useState<IActivity[]>([]);
@@ -39,6 +40,17 @@ function App() {
 
   function handleFormClose() {
     setEditMode(false);
+  }
+
+  function handleCreateOrEditActivity(activity: IActivity) {
+    activity.id
+      ? setActivities([
+          ...activities.filter((x) => x.id !== activity.id),
+          activity,
+        ])
+      : setActivities([...activities, { ...activity, id: uuid() }]);
+    setEditMode(false);
+    setSelectedActivity(activity);
   }
 
   return (
