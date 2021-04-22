@@ -5,9 +5,10 @@ import { IActivity } from "../../app/models/activity";
 interface Props {
   activity: IActivity;
   cancelSelectActivity: () => void;
+  openForm: (id: string) => void;
 }
 
-function ActivityDetails({ activity, cancelSelectActivity }: Props) {
+function ActivityDetails({ activity, cancelSelectActivity, openForm }: Props) {
   return (
     <>
       <Card fluid>
@@ -29,7 +30,13 @@ function ActivityDetails({ activity, cancelSelectActivity }: Props) {
             22 Friends
           </a> */}
           <Button.Group widths="2">
-            <Button basic color="blue" content="Edit" />
+            <Button
+              basic
+              color="blue"
+              content="Edit"
+              onClick={() => openForm(activity.id)}
+            />
+
             <Button
               basic
               color="grey"
