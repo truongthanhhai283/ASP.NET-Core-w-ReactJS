@@ -25,7 +25,7 @@ function App() {
   const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
-    activityStore.loadAvtivities();
+    activityStore.loadAcvtivities();
   }, [activityStore]);
 
   function handleSelectActivity(id: string) {
