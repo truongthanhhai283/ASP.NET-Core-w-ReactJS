@@ -6,6 +6,7 @@ import Navbar from "../layout/Navbar";
 import ActivityDashboard from "../../features/activities/dashboard/ActivityDashboard";
 import { v4 as uuid } from "uuid";
 import agent from "./../api/agent";
+import LoadingComponent from './LoadingComponent';
 
 function App() {
   const [activities, setActivities] = useState<IActivity[]>([]);
@@ -16,15 +17,18 @@ function App() {
 
   const [editMode, setEditMode] = useState(false);
 
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     agent.Activities.list().then((response) => {
       console.log(response);
       let activities: IActivity[] = [];
       response.forEach((activity) => {
         activity.date = activity.date.split("T")[0];
-        activities.push(activity)
+        activities.push(activity);
       });
       setActivities(activities);
+      setLoading(false);
     });
   }, []);
 
@@ -59,6 +63,8 @@ function App() {
   function handleDeleteActivity(id: string) {
     setActivities([...activities.filter((x) => x.id !== id)]);
   }
+
+  if (loading) return <LoadingComponent content="Loading..."/> 
 
   return (
     <>
