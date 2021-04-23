@@ -17,12 +17,15 @@ function ActivityList({ activities, selectActivity, deleteActivity }: Props) {
             <Item key={activity.id}>
               <Item.Content>
                 <Item.Header as="a">{activity.title}</Item.Header>
+                <br />
                 <Item.Meta as="a">{activity.date}</Item.Meta>
+                <br />
                 <Item.Description as="a">
                   {activity.description}
-                  {activity.city},{activity.venue}
+                  <br />
+                  {activity.city}, {activity.venue}
                 </Item.Description>
-
+                <br />
                 <Item.Extra>
                   <Button
                     floated="right"
@@ -31,7 +34,7 @@ function ActivityList({ activities, selectActivity, deleteActivity }: Props) {
                     onClick={() => selectActivity(activity.id)}
                   />
 
-<Button
+                  <Button
                     floated="right"
                     content="Delete"
                     color="red"
