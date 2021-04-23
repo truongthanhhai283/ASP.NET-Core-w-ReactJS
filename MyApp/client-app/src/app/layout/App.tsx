@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Container, List } from "semantic-ui-react";
+import { Container, List, Button } from "semantic-ui-react";
 import { IActivity } from "../models/activity";
 import Navbar from "../layout/Navbar";
 import ActivityDashboard from "../../features/activities/dashboard/ActivityDashboard";
@@ -9,6 +9,7 @@ import agent from "./../api/agent";
 import LoadingComponent from "./LoadingComponent";
 import ActivityStore from "./../stores/activityStore";
 import { useStore } from "./../stores/store";
+import { observer } from "mobx-react-lite";
 
 function App() {
   const { activityStore } = useStore();
@@ -93,6 +94,11 @@ function App() {
 
       <Container style={{ marginTop: "7em" }}>
         <h2>{activityStore.title}</h2>
+        <Button
+          content="Add exclamation!"
+          positive
+          onClick={activityStore.setTitle}
+        />
         <ActivityDashboard
           activities={activities}
           selectedActivity={selectedActivity}
@@ -110,4 +116,4 @@ function App() {
   );
 }
 
-export default App;
+export default observer(App);
