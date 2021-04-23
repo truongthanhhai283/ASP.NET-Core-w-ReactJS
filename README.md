@@ -133,3 +133,15 @@ ASP.NET Core w ReactJS
 
         - Setting up MobX
 
+        - MobX actions
+
+        - Refactoring the app to use MobX
+
+        - MobX strict mode
+
+        - Selecting an Activity using MobX
+
+        - Creating an Activity using MobX
+
+        - Deleting an activity using MobX
+
