@@ -46,6 +46,7 @@ ASP.NET Core w ReactJS
     - npm install axios
     - npm install semantic-ui-react semantic-ui-css
     - npm install uuid + npm i --save-dev @types/uuid
+    - npm install mobx mobx-react-lite
 ### Content
 
 ### 1. Walking Skeleton Part 1 - API
@@ -115,3 +116,20 @@ ASP.NET Core w ReactJS
 
 ### 5. Axios
     Convert datetime
+        - Setting up axios
+
+        - Axios types
+
+        - Adding loading indicators
+
+        - Posting data to the server
+
+        - Deleting activity on the server
+
+### 6. MobX
+        - Introduction
+
+        - What is MobX
+
+        - Setting up MobX
+
