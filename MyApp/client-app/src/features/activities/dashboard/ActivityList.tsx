@@ -6,13 +6,16 @@ interface Props {
   activities: IActivity[];
   selectActivity: (id: string) => void;
   deleteActivity: (id: string) => void;
+  submitting: boolean;
 }
 
 function ActivityList({
   activities,
   selectActivity,
   deleteActivity,
+  submitting,
 }: Props) {
+  
   const [target, setTarget] = useState("");
 
   function handleActivityDelete(
@@ -48,11 +51,12 @@ function ActivityList({
                   />
 
                   <Button
-                    name={activity.id}
                     onClick={(e) => handleActivityDelete(e, activity.id)}
                     floated="right"
                     content="Delete"
                     color="red"
+                    loading={submitting && target===activity.id}
+                    name={activity.id}
                   />
                   <Label basic content={activity.category} />
                 </Item.Extra>
