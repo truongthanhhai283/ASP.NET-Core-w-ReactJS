@@ -145,3 +145,4 @@ ASP.NET Core w ReactJS
 
         - Deleting an activity using MobX
 
+        - Using a Javascript map object to store the activities
