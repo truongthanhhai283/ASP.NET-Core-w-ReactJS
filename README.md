@@ -191,3 +191,5 @@ ASP.NET Core w ReactJS
         - Introduction
 
         - Validation with data annotations
+
+        - Handling API Error responses
