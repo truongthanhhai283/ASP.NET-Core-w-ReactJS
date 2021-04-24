@@ -5,6 +5,7 @@ import { useStore } from "../../../app/stores/store";
 import { useHistory, useParams } from "react-router";
 import LoadingComponent from "../../../app/layout/LoadingComponent";
 import { v4 as uuid } from "uuid";
+import { Link } from "react-router-dom";
 
 export default observer(function ActivityForm() {
   const history = useHistory();
@@ -114,7 +115,13 @@ export default observer(function ActivityForm() {
             content="Submit"
           />
 
-          <Button floated="right" type="button" content="Cancel"></Button>
+          <Button
+            as={Link}
+            to="/activities"
+            floated="right"
+            type="button"
+            content="Cancel"
+          ></Button>
         </Form>
       </Segment>
     </>
