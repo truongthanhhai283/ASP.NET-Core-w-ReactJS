@@ -178,3 +178,5 @@ ASP.NET Core w ReactJS
         - Styling the activity list
 
         - Styling the list items
+
+        - Activity details page
