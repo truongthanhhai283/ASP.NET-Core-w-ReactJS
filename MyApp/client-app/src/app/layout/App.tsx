@@ -7,12 +7,15 @@ import LoadingComponent from "./LoadingComponent";
 import ActivityStore from "./../stores/activityStore";
 import { useStore } from "./../stores/store";
 import { observer } from "mobx-react-lite";
+import { Route } from "react-router";
+import HomePage from "./../../features/home/HomePage";
+import ActivityForm from "../../features/activities/form/ActivityForm";
 
 function App() {
   const { activityStore } = useStore();
 
   useEffect(() => {
-    activityStore.loadAcvtivities();
+    activityStore.loadActivities();
   }, [activityStore]);
 
   if (activityStore.loadingInitial)
@@ -23,7 +26,9 @@ function App() {
       <Navbar />
 
       <Container style={{ marginTop: "7em" }}>
-        <ActivityDashboard />
+        <Route exact path="/" component={HomePage} />
+        <Route path="/activities" component={ActivityDashboard} />
+        <Route path="/createActivity" component={ActivityForm} />
       </Container>
     </>
   );

@@ -20,7 +20,7 @@ export default class ActivityStore {
     );
   }
 
-  loadAcvtivities = async () => {
+  loadActivities = async () => {
     try {
       const activities = await agent.Activities.list();
       // runInAction(() => {
