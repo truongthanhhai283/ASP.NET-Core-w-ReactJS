@@ -185,3 +185,8 @@ ASP.NET Core w ReactJS
         - Adding the activity filter component
 
         - Styling the home page
+
+### 9 Error Handing
+        - Introduction
+
+        - Validation with data annotations
