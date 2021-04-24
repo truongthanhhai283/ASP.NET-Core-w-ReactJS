@@ -51,6 +51,7 @@ ASP.NET Core w ReactJS
     - npm install @types/react-router-dom --save
     - npm install react-router-dom --save
     - npm install react-calendar / npm i --save-dev @types/react-calendar
+    - npm install react-toastify
 ### Content
 
 ### 1. Walking Skeleton Part 1 - API
@@ -199,3 +200,5 @@ ASP.NET Core w ReactJS
         - Handling API Error responses 3
 
         - Handling exceptions
+
+        - Preparing for setting up error handling in the client app
