@@ -2,12 +2,17 @@ import { observer } from "mobx-react-lite";
 import React, { SyntheticEvent, useState } from "react";
 import { Link } from "react-router-dom";
 import { Button, Item, Label, Segment } from "semantic-ui-react";
+import LoadingComponent from "../../../app/layout/LoadingComponent";
 import { useStore } from "./../../../app/stores/store";
 
 export default observer(function ActivityList() {
   const [target, setTarget] = useState("");
   const { activityStore } = useStore();
-  const { deleteActivity, activityByDate, loading } = activityStore;
+  const {
+    deleteActivity,
+    activityByDate,
+    loading,
+  } = activityStore;
 
   function handleActivityDelete(
     e: SyntheticEvent<HTMLButtonElement>,
