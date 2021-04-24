@@ -171,3 +171,8 @@ ASP.NET Core w ReactJS
         - Redirect after submission
 
         - Moving the home page outside of nav
+
+### 8. Styling the User Interface
+        - Introduction
+
+        - Styling the activity list
