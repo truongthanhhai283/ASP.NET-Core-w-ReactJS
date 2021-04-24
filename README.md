@@ -183,3 +183,5 @@ ASP.NET Core w ReactJS
         - Activity details page
 
         - Adding the activity filter component
+
+        - Styling the home page
