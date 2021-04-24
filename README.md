@@ -204,3 +204,5 @@ ASP.NET Core w ReactJS
         - Preparing for setting up error handling in the client app
 
         - Using an interceptor to handle API error responses
+
+        - Adding a not found component
