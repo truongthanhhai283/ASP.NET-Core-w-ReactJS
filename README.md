@@ -202,3 +202,5 @@ ASP.NET Core w ReactJS
         - Handling exceptions
 
         - Preparing for setting up error handling in the client app
+
+        - Using an interceptor to handle API error responses
