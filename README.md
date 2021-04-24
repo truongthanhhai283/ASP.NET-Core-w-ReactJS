@@ -167,5 +167,7 @@ ASP.NET Core w ReactJS
         - Adding the edit activity route
 
         - Adding a key to the route
-        
+
         - Redirect after submission
+
+        - Moving the home page outside of nav
