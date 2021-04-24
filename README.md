@@ -49,6 +49,7 @@ ASP.NET Core w ReactJS
     - npm install mobx mobx-react-lite
     - npm install @types/react-router-dom --save
     - npm install react-router-dom --save
+    - npm install react-calendar / npm i --save-dev @types/react-calendar
 ### Content
 
 ### 1. Walking Skeleton Part 1 - API
@@ -180,3 +181,5 @@ ASP.NET Core w ReactJS
         - Styling the list items
 
         - Activity details page
+
+        - Adding the activity filter component
