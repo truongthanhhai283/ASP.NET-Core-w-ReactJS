@@ -206,3 +206,5 @@ ASP.NET Core w ReactJS
         - Using an interceptor to handle API error responses
 
         - Adding a not found component
+
+        - Handling 400 errors
