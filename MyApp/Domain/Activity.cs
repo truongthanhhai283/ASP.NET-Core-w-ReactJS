@@ -7,7 +7,7 @@ namespace Domain
     {
         public Guid Id { get; set; }
 
-        [Required]
+        // [Required]
         public string Title { get; set; }
         public DateTime Date { get; set; }
         public string Description { get; set; }

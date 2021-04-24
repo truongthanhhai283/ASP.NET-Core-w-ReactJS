@@ -41,6 +41,7 @@ ASP.NET Core w ReactJS
     - dotnet tool install --global 
     - dotnet-aspnet-codegenerator --version 5.0.2
     - dotnet tool install --global Cake.Tool --version 1.1.0
+    - FluentValidation.AspNetCore
 
 ### 4. Install npm
     - npm install axios
