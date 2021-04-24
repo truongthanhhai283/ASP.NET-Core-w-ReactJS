@@ -161,3 +161,11 @@ ASP.NET Core w ReactJS
         - Adding a details link
 
         - Getting an individual activity
+
+        - Using route parameters
+        
+        - Adding the edit activity route
+
+        - Adding a key to the route
+        
+        - Redirect after submission
