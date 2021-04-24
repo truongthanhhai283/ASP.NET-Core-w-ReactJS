@@ -47,6 +47,7 @@ ASP.NET Core w ReactJS
     - npm install semantic-ui-react semantic-ui-css
     - npm install uuid + npm i --save-dev @types/uuid
     - npm install mobx mobx-react-lite
+    - npm install @types/react-router-dom --save
 ### Content
 
 ### 1. Walking Skeleton Part 1 - API
@@ -146,3 +147,8 @@ ASP.NET Core w ReactJS
         - Deleting an activity using MobX
 
         - Using a Javascript map object to store the activities
+
+### 7. Routing
+        - Introduction
+
+        - Installing React Router
