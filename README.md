@@ -159,3 +159,5 @@ ASP.NET Core w ReactJS
         - Adding nav links
 
         - Adding a details link
+
+        - Getting an individual activity

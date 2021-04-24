@@ -1,5 +1,5 @@
 import { observer } from "mobx-react-lite";
-import React, { ChangeEvent, ReactElement, useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 import { Button, Form, Segment } from "semantic-ui-react";
 import { useStore } from "../../../app/stores/store";
 
@@ -7,7 +7,6 @@ export default observer(function ActivityForm() {
   const { activityStore } = useStore();
   const {
     selectedActivity,
-    closeForm,
     createActivity,
     updateActivity,
     loading,
@@ -85,12 +84,7 @@ export default observer(function ActivityForm() {
             content="Submit"
           />
 
-          <Button
-            onClick={closeForm}
-            floated="right"
-            type="button"
-            content="Cancel"
-          ></Button>
+          <Button floated="right" type="button" content="Cancel"></Button>
         </Form>
       </Segment>
     </>

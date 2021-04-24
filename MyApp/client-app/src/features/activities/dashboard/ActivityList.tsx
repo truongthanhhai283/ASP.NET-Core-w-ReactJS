@@ -2,7 +2,6 @@ import { observer } from "mobx-react-lite";
 import React, { SyntheticEvent, useState } from "react";
 import { Link } from "react-router-dom";
 import { Button, Item, Label, Segment } from "semantic-ui-react";
-import ActivityStore from "./../../../app/stores/activityStore";
 import { useStore } from "./../../../app/stores/store";
 
 export default observer(function ActivityList() {

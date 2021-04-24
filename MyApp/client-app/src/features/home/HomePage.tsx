@@ -1,9 +1,5 @@
-import { Observer } from "mobx-react-lite";
-import React, { ReactElement } from "react";
+import React from "react";
 import { Container } from "semantic-ui-react";
-import ActivityDashboard from "./../activities/dashboard/ActivityDashboard";
-
-interface Props {}
 
 export default function HomePage() {
   return (
