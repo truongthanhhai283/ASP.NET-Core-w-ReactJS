@@ -155,3 +155,5 @@ ASP.NET Core w ReactJS
         - Installing React Router
 
         - Adding routes
+
+        - Adding nav links
