@@ -157,3 +157,5 @@ ASP.NET Core w ReactJS
         - Adding routes
 
         - Adding nav links
+
+        - Adding a details link
