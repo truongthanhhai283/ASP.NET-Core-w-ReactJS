@@ -208,3 +208,5 @@ ASP.NET Core w ReactJS
         - Adding a not found component
 
         - Handling 400 errors
+
+        - Handling 500 errors on the client
