@@ -252,3 +252,5 @@ ASP.NET Core w ReactJS
         - Adding seed users
 
         - Creating the user DTOs
+
+        - Adding an account controller
