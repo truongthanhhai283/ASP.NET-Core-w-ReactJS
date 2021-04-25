@@ -8,6 +8,7 @@ import { v4 as uuid } from "uuid";
 import { Link } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import MyTextInput from "./../../../app/common/form/MyTextInput";
 
 export default observer(function ActivityForm() {
   const history = useHistory();
@@ -35,6 +36,11 @@ export default observer(function ActivityForm() {
 
   const validationSchema = Yup.object({
     title: Yup.string().required("The activity title is required"),
+    category: Yup.string().required("The activity category is required"),
+    description: Yup.string().required("The activity description is required"),
+    date: Yup.string().required("The activity date is required"),
+    city: Yup.string().required("The activity city is required"),
+    venue: Yup.string().required("The activity venue is required"),
   });
 
   useEffect(() => {
@@ -87,21 +93,12 @@ export default observer(function ActivityForm() {
               onSubmit={handleSubmit}
               autoComplete="off"
             >
-              <FormField>
-                <Field placeholder="Title" name="title" />
-                <ErrorMessage
-                  name="title"
-                  render={(error) => (
-                    <Label basic color="red" content={error} />
-                  )}
-                />
-              </FormField>
-
-              <Field placeholder="Category" name="category" />
-              <Field placeholder="Description" name="description" />
-              <Field placeholder="Date" name="date" type="date" />
-              <Field placeholder="City" name="city" />
-              <Field placeholder="Venue" name="venue" />
+              <MyTextInput name="title" placeholder="Title" />
+              <MyTextInput placeholder="Category" name="category" />
+              <MyTextInput placeholder="Description" name="description" />
+              <MyTextInput placeholder="Date" name="date" />
+              <MyTextInput placeholder="City" name="city" />
+              <MyTextInput placeholder="Venue" name="venue" />
               <Button
                 loading={loading}
                 floated="right"

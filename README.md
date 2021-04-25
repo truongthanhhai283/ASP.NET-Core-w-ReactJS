@@ -222,3 +222,5 @@ ASP.NET Core w ReactJS
         - Setting up Formik
 
         - Validation in Formik
+
+        - Creating a reusable text input
