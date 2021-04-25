@@ -42,6 +42,7 @@ ASP.NET Core w ReactJS
     - dotnet-aspnet-codegenerator --version 5.0.2
     - dotnet tool install --global Cake.Tool --version 1.1.0
     - FluentValidation.AspNetCore
+    - dotnet ef database drop -s API -p Presistence
 
 ### 4. Install npm
     - npm install axios
@@ -210,3 +211,5 @@ ASP.NET Core w ReactJS
         - Handling 400 errors
 
         - Handling 500 errors on the client
+
+        - Handling the validation error from an invalid GUID
