@@ -53,6 +53,7 @@ ASP.NET Core w ReactJS
     - npm install react-router-dom --save
     - npm install react-calendar / npm i --save-dev @types/react-calendar
     - npm install react-toastify
+    - npm install formik
 ### Content
 
 ### 1. Walking Skeleton Part 1 - API
@@ -213,3 +214,8 @@ ASP.NET Core w ReactJS
         - Handling 500 errors on the client
 
         - Handling the validation error from an invalid GUID
+
+### 10. Form
+        - Introduction
+
+        - Setting up Formik
