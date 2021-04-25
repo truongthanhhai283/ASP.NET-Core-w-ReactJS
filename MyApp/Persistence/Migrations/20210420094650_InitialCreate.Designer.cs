@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Presistence;
+using Persistence;
 
-namespace Presistence.Migrations
+namespace Persistence.Migrations
 {
     [DbContext(typeof(DataContext))]
     [Migration("20210420094650_InitialCreate")]

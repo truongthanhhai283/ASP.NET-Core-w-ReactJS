@@ -7,7 +7,7 @@ using Domain;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Presistence;
+using Persistence;
 
 namespace API.Controllers
 {

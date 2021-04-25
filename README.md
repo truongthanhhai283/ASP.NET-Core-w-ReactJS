@@ -25,7 +25,7 @@ ASP.NET Core w ReactJS
     - dotnet tool -list --global
     
     - dotnet ef -h
-    - dotnet ef migrations add "text" -p Presistence -s ProjectNameAPI
+    - dotnet ef migrations add "text" -p Persistence -s ProjectNameAPI
     - dotnet ef database -h
 
     show command: ctrl + shift + p
@@ -42,7 +42,7 @@ ASP.NET Core w ReactJS
     - dotnet-aspnet-codegenerator --version 5.0.2
     - dotnet tool install --global Cake.Tool --version 1.1.0
     - FluentValidation.AspNetCore
-    - dotnet ef database drop -s API -p Presistence
+    - dotnet ef database drop -s API -p Persistence
 
 ### 4. Install npm
     - npm install axios

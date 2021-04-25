@@ -4,7 +4,7 @@ using Application.Core;
 using AutoMapper;
 using Domain;
 using MediatR;
-using Presistence;
+using Persistence;
 
 namespace Application.Activities
 {
