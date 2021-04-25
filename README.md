@@ -55,6 +55,7 @@ ASP.NET Core w ReactJS
     - npm install react-toastify
     - npm install formik
     - npm install yup --save / npm install @types/yup --save
+    - npm install react-datepicker  /  npm install @types/react-datepicker
 ### Content
 
 ### 1. Walking Skeleton Part 1 - API
