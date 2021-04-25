@@ -224,3 +224,5 @@ ASP.NET Core w ReactJS
         - Validation in Formik
 
         - Creating a reusable text input
+
+        - Creating a reusable text area

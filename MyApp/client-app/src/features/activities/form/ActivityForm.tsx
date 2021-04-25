@@ -6,9 +6,10 @@ import { useHistory, useParams } from "react-router";
 import LoadingComponent from "../../../app/layout/LoadingComponent";
 import { v4 as uuid } from "uuid";
 import { Link } from "react-router-dom";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import MyTextInput from "./../../../app/common/form/MyTextInput";
+import MyTextArea from "./../../../app/common/form/MyTextArea";
 
 export default observer(function ActivityForm() {
   const history = useHistory();
@@ -95,7 +96,11 @@ export default observer(function ActivityForm() {
             >
               <MyTextInput name="title" placeholder="Title" />
               <MyTextInput placeholder="Category" name="category" />
-              <MyTextInput placeholder="Description" name="description" />
+              <MyTextArea
+                rows={3}
+                placeholder="Description"
+                name="description"
+              />
               <MyTextInput placeholder="Date" name="date" />
               <MyTextInput placeholder="City" name="city" />
               <MyTextInput placeholder="Venue" name="venue" />
