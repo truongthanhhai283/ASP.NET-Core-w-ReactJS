@@ -1,6 +1,6 @@
 import { observer } from "mobx-react-lite";
 import React, { useEffect, useState } from "react";
-import { Button, FormField, Label, Segment } from "semantic-ui-react";
+import { Button, FormField, Header, Label, Segment } from "semantic-ui-react";
 import { useStore } from "../../../app/stores/store";
 import { useHistory, useParams } from "react-router";
 import LoadingComponent from "../../../app/layout/LoadingComponent";
@@ -60,21 +60,21 @@ export default observer(function ActivityForm() {
     return <LoadingComponent content="Loading..." />;
   }
 
-  // function handleSubmit() {
-  //   if (activity.id.length === 0) {
-  //     let newActivity = {
-  //       ...activity,
-  //       id: uuid(),
-  //     };
-  //     createActivity(newActivity).then(() => {
-  //       history.push(`/activities/${newActivity.id}`);
-  //     });
-  //   } else {
-  //     updateActivity(activity).then(() =>
-  //       history.push(`/activities/${activity.id}`)
-  //     );
-  //   }
-  // }
+  function handleFormSubmit(activity: IActivity) {
+    if (activity.id.length === 0) {
+      let newActivity = {
+        ...activity,
+        id: uuid(),
+      };
+      createActivity(newActivity).then(() => {
+        history.push(`/activities/${newActivity.id}`);
+      });
+    } else {
+      updateActivity(activity).then(() =>
+        history.push(`/activities/${activity.id}`)
+      );
+    }
+  }
 
   // function handleInputChange(
   //   event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -86,13 +86,14 @@ export default observer(function ActivityForm() {
   return (
     <>
       <Segment clearing>
+        <Header content="Activity Details" sub color="teal" />
         <Formik
           validationSchema={validationSchema}
           enableReinitialize
           initialValues={activity}
-          onSubmit={(values) => console.log(values)}
+          onSubmit={(values) => handleFormSubmit(values)}
         >
-          {({ handleSubmit }) => (
+          {({ handleSubmit, isValid, isSubmitting, dirty }) => (
             <Form
               className="ui form"
               onSubmit={handleSubmit}
@@ -117,9 +118,11 @@ export default observer(function ActivityForm() {
                 timeCaption="time"
                 dateFormat="MMMM d, yyyy h:mm aa"
               />
+              <Header content="Location Details" sub color="teal" />
               <MyTextInput placeholder="City" name="city" />
               <MyTextInput placeholder="Venue" name="venue" />
               <Button
+                disabled={isSubmitting || !dirty || !isValid}
                 loading={loading}
                 floated="right"
                 positive

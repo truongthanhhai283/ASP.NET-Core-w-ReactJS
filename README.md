@@ -235,3 +235,5 @@ ASP.NET Core w ReactJS
         - The date strategy
 
         - Using Date-FNS
+
+        - Hooking up the form submission to Formik
