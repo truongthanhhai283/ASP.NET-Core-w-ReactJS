@@ -226,3 +226,5 @@ ASP.NET Core w ReactJS
         - Creating a reusable text input
 
         - Creating a reusable text area
+
+        - Creating a reusable select input

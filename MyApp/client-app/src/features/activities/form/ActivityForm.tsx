@@ -10,6 +10,8 @@ import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import MyTextInput from "./../../../app/common/form/MyTextInput";
 import MyTextArea from "./../../../app/common/form/MyTextArea";
+import MySelectInput from "./../../../app/common/form/MySelectInput";
+import { categoryOptions } from "./../../../app/common/options/categoryOptions";
 
 export default observer(function ActivityForm() {
   const history = useHistory();
@@ -95,7 +97,12 @@ export default observer(function ActivityForm() {
               autoComplete="off"
             >
               <MyTextInput name="title" placeholder="Title" />
-              <MyTextInput placeholder="Category" name="category" />
+             
+              <MySelectInput
+                options={categoryOptions}
+                placeholder="Category"
+                name="category"
+              />
               <MyTextArea
                 rows={3}
                 placeholder="Description"
