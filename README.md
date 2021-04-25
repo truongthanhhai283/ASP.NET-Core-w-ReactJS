@@ -43,6 +43,7 @@ ASP.NET Core w ReactJS
     - dotnet tool install --global Cake.Tool --version 1.1.0
     - FluentValidation.AspNetCore
     - dotnet ef database drop -s API -p Persistence
+    - Microsoft.AspNetCore.Identity
 
 ### 4. Install npm
     - npm install axios
@@ -237,3 +238,6 @@ ASP.NET Core w ReactJS
         - Using Date-FNS
 
         - Hooking up the form submission to Formik
+
+### 11. Identity
+        - Adding a user entity
