@@ -27,6 +27,14 @@ ASP.NET Core w ReactJS
     - dotnet ef -h
     - dotnet ef migrations add "text" -p Persistence -s ProjectNameAPI
     - dotnet ef database -h
+    
+    - dotnet ef database drop -s API -p Persistence
+    - dotnet tool install/update --global 
+    - dotnet-ef  --version 5.0.5
+    - dotnet tool install --global 
+    - dotnet-aspnet-codegenerator --version 5.0.2
+    - dotnet tool install --global Cake.Tool --version 1.1.0
+    - dotnet ef migrations add IdentityAdded -p Persistence -s API
 
     show command: ctrl + shift + p
     - Generate assets for Build and debug
@@ -35,14 +43,9 @@ ASP.NET Core w ReactJS
 
     - Microsoft.EntityFrameworkCore.Sqlite
     - Microsoft.EntityFrameworkCore.Design
-    - Microsoft.AspNetCore.Mvc.Core
-    - dotnet tool install/update --global 
-    - dotnet-ef  --version 5.0.5
-    - dotnet tool install --global 
-    - dotnet-aspnet-codegenerator --version 5.0.2
-    - dotnet tool install --global Cake.Tool --version 1.1.0
+    - Microsoft.AspNetCore.Mvc.Core    
     - FluentValidation.AspNetCore
-    - dotnet ef database drop -s API -p Persistence
+    - 
     - Microsoft.AspNetCore.Identity
 
 ### 4. Install npm
@@ -241,3 +244,5 @@ ASP.NET Core w ReactJS
 
 ### 11. Identity
         - Adding a user entity
+
+        - Adding an IdentityDbContext
