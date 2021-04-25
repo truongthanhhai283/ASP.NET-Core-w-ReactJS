@@ -246,3 +246,5 @@ ASP.NET Core w ReactJS
         - Adding a user entity
 
         - Adding an IdentityDbContext
+
+        - Configuring Identity in the Startup class
