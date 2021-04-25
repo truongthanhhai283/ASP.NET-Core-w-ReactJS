@@ -56,6 +56,8 @@ ASP.NET Core w ReactJS
     - npm install formik
     - npm install yup --save / npm install @types/yup --save
     - npm install react-datepicker  /  npm install @types/react-datepicker
+    - npm ls date-fns
+    - npm install date-fns@2.16.1
 ### Content
 
 ### 1. Walking Skeleton Part 1 - API
@@ -231,3 +233,5 @@ ASP.NET Core w ReactJS
         - Creating a reusable select input
 
         - The date strategy
+
+        - Using Date-FNS
