@@ -250,3 +250,5 @@ ASP.NET Core w ReactJS
         - Configuring Identity in the Startup class
 
         - Adding seed users
+
+        - Creating the user DTOs
