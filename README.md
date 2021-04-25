@@ -248,3 +248,5 @@ ASP.NET Core w ReactJS
         - Adding an IdentityDbContext
 
         - Configuring Identity in the Startup class
+
+        - Adding seed users
