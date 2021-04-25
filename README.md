@@ -229,3 +229,5 @@ ASP.NET Core w ReactJS
         - Creating a reusable text area
 
         - Creating a reusable select input
+
+        - The date strategy
