@@ -267,3 +267,5 @@ ASP.NET Core w ReactJS
         - Creating an auth policy
 
         - Registering new users
+
+        - -Validating the registration of users (required)
