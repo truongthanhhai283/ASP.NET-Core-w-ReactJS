@@ -269,3 +269,5 @@ ASP.NET Core w ReactJS
         - Registering new users
 
         - -Validating the registration of users (required)
+
+        - Getting the current user
