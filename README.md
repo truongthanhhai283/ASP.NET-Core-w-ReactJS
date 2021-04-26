@@ -271,3 +271,6 @@ ASP.NET Core w ReactJS
         - -Validating the registration of users (required)
 
         - Getting the current user
+
+### 12. Client side login and registration
+        - Creating a login form
