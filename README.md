@@ -263,3 +263,5 @@ ASP.NET Core w ReactJS
         - Authenticating to the app
 
         - Storing secrets in development
+
+        - Creating an auth policy
