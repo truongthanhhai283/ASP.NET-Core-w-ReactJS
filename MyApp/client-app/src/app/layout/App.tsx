@@ -13,18 +13,21 @@ import TestErrors from "./../../features/errors/TestError";
 import { ToastContainer } from "react-toastify";
 import NotFound from "./../../features/errors/NotFound";
 import ServerError from "../../features/errors/ServerError";
-import LoginForm from './../../features/users/LoginForm';
+import LoginForm from "./../../features/users/LoginForm";
 
 function App() {
-  const { activityStore } = useStore();
+  const { userStore, commonStore } = useStore();
   const location = useLocation();
 
   useEffect(() => {
-    activityStore.loadActivities();
-  }, [activityStore]);
+    if (commonStore.token) {
+      userStore.getUser().finally(() => commonStore.setAppLoaded());
+    } else {
+      commonStore.setAppLoaded();
+    }
+  }, [commonStore, userStore]);
 
-  if (activityStore.loadingInitial)
-    return <LoadingComponent content="Loading..." />;
+  if (!commonStore.appLoaded) return <LoadingComponent content="Loading..." />;
 
   return (
     <>

@@ -284,3 +284,5 @@ ASP.NET Core w ReactJS
         - Setting the token upon login
 
         - Updating the home page and nav bar
+        
+        - Persisting the login
