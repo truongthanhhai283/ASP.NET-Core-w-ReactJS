@@ -47,6 +47,7 @@ ASP.NET Core w ReactJS
     - FluentValidation.AspNetCore
     - 
     - Microsoft.AspNetCore.Identity
+    - Microsoft.AspNetCore.Authentication.JwtBearer
 
 ### 4. Install npm
     - npm install axios
@@ -258,3 +259,5 @@ ASP.NET Core w ReactJS
         - JSON Web Tokens
 
         - Creating a token service
+
+        - Authenticating to the app
