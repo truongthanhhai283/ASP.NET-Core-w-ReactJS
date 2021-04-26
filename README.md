@@ -254,3 +254,7 @@ ASP.NET Core w ReactJS
         - Creating the user DTOs
 
         - Adding an account controller
+
+        - JSON Web Tokens
+
+        - Creating a token service
