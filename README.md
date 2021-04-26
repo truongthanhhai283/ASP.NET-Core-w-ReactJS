@@ -276,3 +276,5 @@ ASP.NET Core w ReactJS
         - Creating a login form
 
         - Creating the interfaces and methods
+
+        - Creating a user store
