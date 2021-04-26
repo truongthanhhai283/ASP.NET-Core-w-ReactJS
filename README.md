@@ -278,3 +278,5 @@ ASP.NET Core w ReactJS
         - Creating the interfaces and methods
 
         - Creating a user store
+
+        - Displaying errors in the form
