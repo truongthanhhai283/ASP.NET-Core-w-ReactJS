@@ -280,3 +280,5 @@ ASP.NET Core w ReactJS
         - Creating a user store
 
         - Displaying errors in the form
+
+        - Setting the token upon login
