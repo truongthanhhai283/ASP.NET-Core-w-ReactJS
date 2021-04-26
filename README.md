@@ -261,3 +261,5 @@ ASP.NET Core w ReactJS
         - Creating a token service
 
         - Authenticating to the app
+
+        - Storing secrets in development
