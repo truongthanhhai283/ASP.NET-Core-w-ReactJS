@@ -282,3 +282,5 @@ ASP.NET Core w ReactJS
         - Displaying errors in the form
 
         - Setting the token upon login
+
+        - Updating the home page and nav bar

@@ -19,7 +19,7 @@ export default observer(function LoginForm() {
       {({ handleSubmit, isSubmitting, errors }) => (
         <Form className="ui form" onSubmit={handleSubmit} autoComplete="off">
           <MyTextInput name="email" placeholder="Email" />
-          <MyTextInput name="password" placeholder="Password" />
+          <MyTextInput name="password" placeholder="Password" type="password"/>
           <ErrorMessage
             name="error"
             render={() => (
