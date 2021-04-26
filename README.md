@@ -274,3 +274,5 @@ ASP.NET Core w ReactJS
 
 ### 12. Client side login and registration
         - Creating a login form
+
+        - Creating the interfaces and methods
